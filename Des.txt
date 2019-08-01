@@ -1,0 +1,18 @@
+Phase - 1: Admin Panel
+
+Admin Login Register
+1.Create New User(Employee)
+2.Update Employee Information
+3.Delete Employee
+4.Assign Task
+5.Leave Apply
+6.Check Attendance
+
+
+Phane - 2: Employee
+
+1.Login Page
+2.Dashbord
+3.Employee Update his Information
+4.Check Assign Task - Status Update
+5.Apply Leave
