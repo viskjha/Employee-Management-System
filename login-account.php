@@ -25,9 +25,28 @@ if(isset($_POST['uemail']))
     $res=mysqli_query($conn, $query);
 
     $count=mysqli_num_rows($res);
+    $row=mysqli_fetch_array($res);
     if($count==1)
     {
-        echo "Login Success";
+        //Auth session
+        $session_id=session_id();
+        $_SESSION['auth']= $session_id;
+        //End of Auth session
+
+
+        $role=$row['role'];
+        if($role=='admin')
+        {
+            header('Location: admin/dashbord.php');
+            echo "Login Success";
+        }
+        elseif ($role=='employee') {
+            header('Location: employee/dashbord.php');
+            echo "Login Success";
+        }
+        else {
+            header('Location: login.php');
+        }
     }
     else {
         $_SESSION['error']="Wrong Email or password";

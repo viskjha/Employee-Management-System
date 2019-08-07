@@ -21,9 +21,10 @@ if(isset($_REQUEST['uemail']))
     $uemail=$_POST['uemail'];
     $pass=sha1($_POST['upass']);
     $dep=$_POST['dep'];
+    $role=$_POST['role'];
 
-    $query="INSERT INTO users (user_id, name, email, password, department)
-            values ('', '$uname','$uemail','$pass', '$dep')";
+    $query="INSERT INTO users (user_id, name, email, password, department, role)
+            values ('', '$uname','$uemail','$pass', '$dep', '$role')";
 
     $res=mysqli_query($conn,$query);
 
