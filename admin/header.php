@@ -12,7 +12,7 @@
                         <a class="nav-link" href="dashbord.php">Dashbord</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="register.php">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Task</a>
@@ -20,14 +20,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Leave</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Logout</a>
-                    </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <a class="nav-link" href="logout.php">Logout</a>
             </div>
         </nav>
     </header>
