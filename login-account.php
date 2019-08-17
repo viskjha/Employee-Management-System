@@ -31,6 +31,7 @@ if(isset($_POST['uemail']))
         //Auth session
         $session_id=session_id();
         $_SESSION['auth']= $session_id;
+        $_SESSION['user_id']= $row['user_id'];
         //End of Auth session
 
 

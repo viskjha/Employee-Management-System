@@ -23,7 +23,7 @@ include "../auth/auth.php";
     <div class="container">
         <div class="col-xs-6 col-xs-push-3">
             <!-- Register Form -->
-            <form method="POST" action="insertuser.php" onsubmit="return formvalidation();">
+            <form method="POST" action="insert-task.php" onsubmit="return formvalidation();">
                 <fieldset>
                     <legend>Assign Task</legend>
 
@@ -40,6 +40,8 @@ include "../auth/auth.php";
 
                     <fieldset class="form-group">
                         <legend>Department</legend>
+
+                        <input type="hidden" name="assign_by" value="<?php echo $_SESSION['user_id']; ?>">
 
 
                         <?php
@@ -75,10 +77,6 @@ include "../auth/auth.php";
                             placeholder="Enter Message" required></textarea>
                     </div>
                     </div>
-
-
-                    
-
                     
             
                     <button type="submit" class="btn btn-primary">Submit</button>
